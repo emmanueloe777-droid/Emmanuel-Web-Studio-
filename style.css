@@ -1,0 +1,417 @@
+/* ===================================
+   EMMANUEL WEB STUDIO
+   PREMIUM WHITE + GOLD THEME (CLEAN FIXED VERSION)
+=================================== */
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#ffffff;
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo h2{
+    color:#D4AF37;
+    font-size:30px;
+}
+
+.logo span{
+    font-weight:bold;
+    color:#111;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#D4AF37;
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:55px;
+    line-height:1.2;
+    margin-bottom:20px;
+    color:#111;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+/* BUTTONS */
+.btn-primary{
+    background:#D4AF37;
+    color:#111;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.btn-secondary{
+    border:2px solid #D4AF37;
+    color:#D4AF37;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+/* HERO IMAGE */
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* ===================================
+   SECTIONS
+=================================== */
+
+section{
+    padding:60px 8%;
+}
+
+section.hero{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:36px;
+    color:#111;
+}
+
+/* ===================================
+   GRID SYSTEMS
+=================================== */
+
+.service-grid,
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+/* ===================================
+   SERVICE CARDS
+=================================== */
+
+.service-card{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    line-height:1.7;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-6px);
+    border-color:#D4AF37;
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    color:#D4AF37;
+}
+
+.service-card p{
+    margin-bottom:20px;
+    color:#555;
+}
+
+.service-card a{
+    display:inline-block;
+    margin:10px 8px;
+}
+
+/* ===================================
+   PROJECTS
+=================================== */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:15px 20px 5px;
+}
+
+.project-card p{
+    padding:0 20px;
+}
+
+.project-card a{
+    display:inline-block;
+    margin:20px;
+    text-decoration:none;
+    background:#D4AF37;
+    color:#111;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* ===================================
+   WHY CHOOSE US
+=================================== */
+
+.why-box{
+    background:#fafafa;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    font-weight:bold;
+    border-left:5px solid #D4AF37;
+}
+
+/* ===================================
+   CTA
+=================================== */
+
+.cta{
+    text-align:center;
+    background:#111;
+    color:white;
+}
+
+.cta h2{
+    color:white;
+}
+
+.cta p{
+    margin-bottom:25px;
+}
+
+.cta a{
+    display:inline-block;
+    text-decoration:none;
+    background:#D4AF37;
+    color:#111;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+/* ===================================
+   REQUEST FORM SYSTEM
+=================================== */
+
+.form-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+    padding:40px 8%;
+}
+
+.service-card input,
+.service-card textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    margin-top:8px;
+    outline:none;
+    transition:0.3s;
+}
+
+.service-card input:focus,
+.service-card textarea:focus{
+    border-color:#D4AF37;
+    box-shadow:0 0 8px rgba(212,175,55,0.3);
+}
+
+.service-card label{
+    font-weight:bold;
+    color:#111;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+    background:#111;
+    color:white;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:60px 8%;
+}
+
+.footer-column h3{
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.footer-column a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin-bottom:10px;
+}
+
+.footer-column a:hover{
+    color:#D4AF37;
+}
+
+.copyright{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+}@media (min-width: 1024px){
+
+    /* CONTAINER CONTROL FOR ALL SECTIONS */
+    section{
+        padding:80px 10%;
+    }
+
+    /* LIMIT WIDTH FOR BETTER READABILITY */
+    .service-grid{
+        max-width:1100px;
+        margin:auto;
+    }
+
+    /* CONTACT CARDS ALIGN BETTER */
+    .service-card{
+        max-width:350px;
+        margin:auto;
+    }
+
+    /* HERO FIX ON DESKTOP CONTACT PAGE */
+    .hero{
+        max-width:1200px;
+        margin:auto;
+    }
+
+    /* CONTACT FORM CENTER CONTROL */
+    .form-page{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:60px 10%;
+    }
+
+}

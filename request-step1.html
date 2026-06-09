@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Step 1 | Service Selection</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    font-family:Arial;
+    background:#f5f7fa;
+    margin:0;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border:2px solid #1E88E5;
+}
+
+.card h3{
+    color:#0A2A66;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.badge{
+    display:inline-block;
+    padding:4px 8px;
+    font-size:12px;
+    background:#eef6ff;
+    color:#1E88E5;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    padding:20px;
+    font-size:13px;
+    color:#666;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Choose Your Service</h1>
+        <p>Select the service that best matches your project needs. Each option has different features and complexity.</p>
+    </div>
+
+    <div class="card-grid">
+
+        <!-- WEBSITE ONLY -->
+        <div class="card" onclick="selectService('website')">
+            <h3>Website Only</h3>
+            <p>
+                A standard professional website for businesses, schools, churches or personal use.
+                Includes pages like Home, About, Services and Contact.
+            </p>
+            <span class="badge">No login • No payment system</span>
+        </div>
+
+        <!-- PORTAL -->
+        <div class="card" onclick="selectService('portal')">
+            <h3>Website + Portal</h3>
+            <p>
+                A website with login system and user dashboard.
+                Suitable for schools, members, staff systems or restricted access platforms.
+            </p>
+            <span class="badge">Login • Dashboard included</span>
+        </div>
+
+        <!-- BUSINESS SYSTEM -->
+        <div class="card" onclick="selectService('business')">
+            <h3>Web + Business System</h3>
+            <p>
+                Advanced system for online operations like orders, bookings, delivery or service requests.
+                Can include payment system, tracking, and customer management.
+            </p>
+            <span class="badge">Orders • Booking • Optional payment</span>
+        </div>
+
+        <!-- UI/UX -->
+        <div class="card" onclick="selectService('uiux')">
+            <h3>UI/UX Design Only</h3>
+            <p>
+                Visual design of websites without coding.
+                Includes layouts, color systems, prototypes and user interface design.
+            </p>
+            <span class="badge">Design only</span>
+        </div>
+
+        <!-- MAINTENANCE -->
+        <div class="card" onclick="selectService('maintenance')">
+            <h3>Maintenance / Support</h3>
+            <p>
+                Updates, fixes, improvements or management of existing websites.
+                Ideal for already-built websites needing ongoing support.
+            </p>
+            <span class="badge">Fix • Update • Support</span>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Emmanuel Web Studio (EWS). All Rights Reserved.
+    </footer>
+
+</div>
+
+<script>
+function selectService(service){
+    sessionStorage.setItem("serviceType", service);
+    window.location.href = "request-step2.html";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Step 3 | EWS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>EWS</h2>
+        <span>Step 3 - Project Details Builder</span>
+    </div>
+
+</header>
+
+<section class="services">
+
+<h2>Full Website Information</h2>
+
+<p style="color:#666;">
+Fill all important details about your website. This ensures nothing is missing during development.
+</p>
+
+<div class="service-card">
+
+    <h3>Contact Information (Optional)</h3>
+
+    <input type="text" id="contactPhone" placeholder="Phone Number">
+    <input type="text" id="contactWhatsApp" placeholder="WhatsApp Number">
+    <input type="email" id="contactEmail" placeholder="Email Address">
+    <input type="text" id="contactAddress" placeholder="Business Address">
+    <input type="text" id="customerService" placeholder="Customer Service Info">
+
+</div>
+
+<br>
+
+<div class="service-card">
+
+    <h3>Logo & Branding</h3>
+
+    <select id="logoType">
+        <option value="">Select Logo Type</option>
+        <option value="text">Text Logo</option>
+        <option value="image">Image Logo</option>
+        <option value="mixed">Mixed Logo</option>
+    </select>
+
+    <br><br>
+
+    <label>Upload Logo (optional)</label>
+    <input type="file" id="logoUpload">
+
+</div>
+
+<br>
+
+<div class="service-card">
+
+    <h3>Website Content</h3>
+
+    <textarea id="welcomeSpeech" rows="3" placeholder="Welcome Message / Homepage Speech"></textarea>
+
+    <textarea id="aboutText" rows="3" placeholder="About Company / Organization"></textarea>
+
+    <textarea id="servicesText" rows="3" placeholder="Describe Services Offered"></textarea>
+
+</div>
+
+<br>
+
+<div class="service-card">
+
+    <h3>Extra Features</h3>
+
+    <label><input type="checkbox" value="contactForm"> Contact Form</label><br>
+    <label><input type="checkbox" value="login"> Login System</label><br>
+    <label><input type="checkbox" value="gallery"> Image Gallery</label><br>
+    <label><input type="checkbox" value="blog"> Blog Section</label><br>
+    <label><input type="checkbox" value="payment"> Payment System</label><br>
+    <label><input type="checkbox" value="admin"> Admin Dashboard</label>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+    <a href="#" onclick="validateStep3()">Next →</a>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
